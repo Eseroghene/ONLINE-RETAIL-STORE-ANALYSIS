@@ -151,21 +151,5 @@ About
 No description, website, or topics provided.
 Resources
  Readme
- Activity
-Stars
- 0 stars
-Watchers
- 1 watching
-Forks
- 0 forks
-Report repository
-Releases
-No releases published
-Packages
-No packages published
-Footer
-© 2025 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
+
 
