@@ -282,7 +282,7 @@ The dataset used in this project is online retail transactions and contains the 
 
 - Outliers can distort analysis and impact model performance. Winsorization was applied to cap extreme values, reducing their influence while preserving data integrity.
 
-4
+<img width="766" alt="Screenshot 2025-03-02 at 12 44 47 PM" src="https://github.com/user-attachments/assets/0383ca59-d500-4b1a-a2d1-9f6db9d07cf9" />
 
 **Feature Encoding:**
 
