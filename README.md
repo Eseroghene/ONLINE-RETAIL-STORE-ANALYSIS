@@ -108,7 +108,7 @@ The dataset used in this project is online retail transactions and contains the 
 - Period of the Day
 - Days of the Week
 
-## VISUALIZATION AND INSIGHTS
+## VISUALIZATION
 
 **Best-Selling Products: Total Sales & Quantity**
 
