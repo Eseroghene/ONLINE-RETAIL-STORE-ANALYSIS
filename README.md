@@ -291,9 +291,6 @@ The dataset used in this project is online retail transactions and contains the 
 **Handling Class Imbalance:**
 
 - Since customer segment is our target, class imbalance was addressed using techniques like oversampling algorithms to prevent bias.
-- Before sampling: 6
-
-- After sampling: 7
 
 **Train-Test Split:**
 
@@ -315,7 +312,8 @@ The model was assessed using a classification report and confusion matrix.
 
 - Class 2: 11,010 correct, 5 misclassified as Class 0. 🔹Overall, the model performed well, but misclassifications suggest potential improvements through hyperparameter tuning and better feature engineering.
 
-5
+<img width="702" alt="Screenshot 2025-03-02 at 12 20 40 PM" src="https://github.com/user-attachments/assets/a0087e38-6117-4510-83ed-33330d1e7c62" />
+
 ## FEATURE IMPORTANCE ANALYSIS
 
 Feature importance reveals which variables most impact the model’s predictions. The RandomForestClassifier ranks features based on their influence using feature_importances_.
@@ -329,8 +327,7 @@ Feature importance reveals which variables most impact the model’s predictions
 - Month, Quarter & Country have moderate impact on predictions.
 
 - Hour & Days of the Week contribute the least, indicating minimal effect on classification.
-
-8
+<img width="921" alt="Screenshot 2025-03-02 at 12 20 31 PM" src="https://github.com/user-attachments/assets/032797b9-347e-4bb4-b3b0-9a4bdd3829b5" />
 
 **Why It Matters:**
 
