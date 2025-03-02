@@ -2,11 +2,14 @@
 
 ## TABLE OF CONTENT
 - [Introduction](#Introduction)
+- [Dataset Overview](#Dataset-Overview)
+- [Data Quality Assessment](#Data-Quality-Assessment)
 - [Tools & Technology Used](#Tools-&-Technology-Used)
 - [Exploratory Data Analysis](#Exploratory-Data-Analysis)
 - [Feature Engineering](#Feature-Engineering)
-- [Predictive Classification Model](#Predictive-Classification-Model)
+- [Visualization](#Visualization)
 - [Clustering Analysis](#Clustering-Analysis)
+- [Predictive Classification Model](#Predictive-Classification-Model)
 - [Sales Forecasting](#Sales-Forecasting)
 - [Customer Segmentation](#Customer-Segmentation)
 - [Business Insights & Marketing Strategy Recommendation](#Business-Insights-&-Marketing-Strategy-Recommendation)
