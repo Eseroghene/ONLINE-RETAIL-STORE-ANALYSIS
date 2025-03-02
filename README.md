@@ -11,7 +11,7 @@
 - [Clustering Analysis](#Clustering-Analysis)
 - [Predictive Classification Model](#Predictive-Classification-Model)
 - [Sales Forecasting](#Sales-Forecasting)
-- [Customer Segmentation](#Customer-Segmentation)
+- [Feature Importance Analysis](#Feature-Importance-Analysis)
 - [Business Insights & Marketing Strategy Recommendation](#Business-Insights-&-Marketing-Strategy-Recommendation)
 - [Conclusion](#Conclusion)
 - [Recommendation](#Recommendation)
