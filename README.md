@@ -10,11 +10,10 @@
 - [Visualization](#Visualization)
 - [Clustering Analysis](#Clustering-Analysis)
 - [Predictive Classification Model](#Predictive-Classification-Model)
-- [Sales Forecasting (Time Series Analysis)](#Sales-Forecasting-(Time-Series-Analysis))
 - [Feature Importance Analysis](#Feature-Importance-Analysis)
-- [Business Insights & Marketing Strategy Recommendation](#Business-Insights-&-Marketing-Strategy-Recommendation)
-- [Conclusion](#Conclusion)
+- [Sales Forecasting (Time Series Analysis)](#Sales-Forecasting-(Time-Series-Analysis))
 - [Recommendation](#Recommendation)
+- [Conclusion](#Conclusion)
 
 ## INTRODUCTION
 
