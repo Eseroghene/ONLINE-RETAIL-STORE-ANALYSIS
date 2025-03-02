@@ -12,7 +12,7 @@
 - [Predictive Classification Model](#Predictive-Classification-Model)
 - [Feature Importance Analysis](#Feature-Importance-Analysis)
 - [Sales Forecasting (Time Series Analysis)](#Sales-Forecasting-(Time-Series-Analysis))
-- [Recommendation](#Recommendation)
+- [Recommendations](#Recommendations)
 - [Conclusion](#Conclusion)
 
 ## INTRODUCTION
@@ -361,3 +361,17 @@ A 30-day forecast was generated.
 - Daily Seasonality: Sales rise in the morning and evening, with dips in between.
 <img width="1164" alt="Screenshot 2025-03-02 at 12 35 05 PM" src="https://github.com/user-attachments/assets/263e4765-98d3-4bb4-8235-9b95a1e52374" />
 <img width="1046" alt="Screenshot 2025-03-02 at 12 34 53 PM" src="https://github.com/user-attachments/assets/aa2cb157-b9de-4ef8-ac76-ca2512a3617b" />
+
+## RECOMMENDATIONS
+
+- Customer Retention: Implement loyalty programs, discounts, and personalized marketing for high-value customers.
+- Inventory Optimization: Prioritize stocking best-selling products, reduce low-performing items, and bundle slow-movers with popular ones.
+- Sales Strategy: Focus on Q4 promotions and optimize pricing for high-revenue products to maximize seasonal sales.
+- International Expansion: Strengthen marketing efforts in high-performing international markets like Netherlands and Germany.
+- Operational Efficiency: Adjust staffing and logistics to match peak sales periods, especially on weekdays and afternoons.
+- Clustering Utilization: Use customer segmentation insights for targeted marketing and product segmentation to enhance pricing strategies.
+- Forecast-Based Decisions: Leverage sales forecasting to optimize inventory, plan promotions, and prevent stock shortages.
+- Reduce Returns & Errors: Investigate reasons for high return rates and enforce better quality checks.
+
+## CONCLUSION
+- This analysis provides key insights into customer behavior, product performance, and sales trends. By leveraging machine learning, clustering, and forecasting, businesses can enhance inventory management, optimize marketing, and improve revenue. Implementing data-driven strategies will drive growth, customer retention, and operational efficiency.
