@@ -271,6 +271,6 @@ The dataset used in this project is online retail transactions and contains the 
 - High-demand and most profitable products.
 - Strategy: Offer exclusive deals, upselling opportunities, and ensure consistent stock availability.
 
-<img width="839" alt="Screenshot 2025-03-02 at 10 55 32 AM" src="https://github.com/user-attachments/assets/d4c5967c-2245-4f1b-8410-3a83d8df873b" />
+<img width="871" alt="Screenshot 2025-03-02 at 11 03 07 AM" src="https://github.com/user-attachments/assets/1e7f14bd-42e7-4900-b4ac-707002d1bff4" />
 
 
