@@ -109,26 +109,47 @@ The dataset used in this project is online retail transactions and contains the 
 - Period of the Day
 - Days of the Week
 
+## VISUALIZATION AND INSIGHTS
+
+**Best-Selling Products: Total Sales & Quantity**
+
+- Top-selling products: REGENCY CAKESTAND 3 TIER & PAPER CRAFT, LITTLE BIRDIE
+
+- High revenue but lower quantity sold: REGENCY CAKESTAND 3 TIER – premium pricing
+
+- High quantity but lower revenue: WHITE HANGING HEART T-LIGHT HOLDER, RABBIT NIGHT LIGHT – low-cost, bulk-sold items
+
+- Balanced performer: MEDIUM CERAMIC TOP STORAGE JAR – strong in both sales & quantity
+
+- Stocking strategy: Prioritize high-revenue products, optimize pricing for bulk-sellers, bundle festive & home decor items
+<img width="741" alt="Best Selling Product" src="https://github.com/user-attachments/assets/fb80d4e9-c096-4d64-9f00-f20cc91d5ef0" />
+
+**Top 10 Countries by Sales**
+
+- Dominant Market: United Kingdom has overwhelmingly the highest sales, far exceeding all other countries.
+
+- Other Key Markets: Netherlands, EIRE (Ireland), Germany, and France follow, but with significantly lower sales.
+
+- Global Reach: Sales extend beyond Europe to countries like Australia, Japan, and Switzerland.
+
+- Potential Focus Areas: Expanding marketing efforts in top-performing international markets could drive more growth.
+
+<img width="788" alt="Screenshot 2025-03-02 at 10 36 02 AM" src="https://github.com/user-attachments/assets/af847cc7-a2ab-40b2-aa4a-6922c8cb4144" />
+
+**Daily Purchase Trend**
+
+- Highest sales occur on Tuesday and Thursday, with peaks above 2 million.
+
+- Sales drop significantly on Saturday, reaching near zero, which suggests minimal or no transactions on this day.
+
+- Sales slightly recover on Sunday but remain lower compared to weekdays.
+
+- Overall, weekdays have higher sales than weekends, indicating that most transactions happen during the workweek.
+
+<img width="696" alt="Screenshot 2025-03-02 at 10 37 30 AM" src="https://github.com/user-attachments/assets/3bf747ae-ad78-45e5-ab10-609886a13119" />
 
 
-
-
-#### 5. Predictive Classification Model
-
-  - Implemented machine learning models (Logistic Regression, Random Forest, XGBoost).
-  - Trained models to classify transactions based on customer purchasing behavior.
-  - Evaluated performance using accuracy, precision, recall, and F1-score.
-
-#### 6. Clustering Analysis
-
-  - Used unsupervised learning (K-Means) to segment customers based on shopping patterns.
-  - Determined optimal clusters using the Elbow method and silhouette score.
-
-#### 7. Sales Forecasting (Time Series Analysis)
-
-  - Applied Facebook Prophet to predict future sales trends.
-  - Evaluated forecast accuracy using RMSE and MAPE.
-  - Provided insights into expected revenue trends for strategic decision-making.
+for strategic decision-making.
 
 ## TOOLS AND TECHNOLOGIES
 
