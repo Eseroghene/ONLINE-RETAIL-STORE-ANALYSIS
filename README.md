@@ -273,4 +273,67 @@ The dataset used in this project is online retail transactions and contains the 
 
 <img width="871" alt="Screenshot 2025-03-02 at 11 03 07 AM" src="https://github.com/user-attachments/assets/1e7f14bd-42e7-4900-b4ac-707002d1bff4" />
 
+## PREDICTIVE CLASSIFICATION MODEL
+**Feature Selection:**
 
+- Irrelevant features such as transaction details, product information, and customer IDs were removed to avoid redundancy and improve model focus. The target variable (Segment) was also excluded to prevent data leakage.
+
+**Handling Outliers:**
+
+- Outliers can distort analysis and impact model performance. Winsorization was applied to cap extreme values, reducing their influence while preserving data integrity.
+
+4
+
+**Feature Encoding:**
+
+- Categorical variables like Month and Day of the Week were encoded into numerical values, allowing the model to process them effectively.
+
+**Handling Class Imbalance:**
+
+- Since customer segment is our target, class imbalance was addressed using techniques like oversampling algorithms to prevent bias.
+- Before sampling: 6
+
+- After sampling: 7
+
+**Train-Test Split:**
+
+- The dataset was split into training (learning patterns) and testing (assessing generalization) sets. This prevents overfitting and ensures robust model   evaluation.
+
+**Model Training:**
+
+- A RandomForestClassifier was trained, leveraging multiple decision trees for improved accuracy and reduced overfitting.
+
+**Predictions & Model Evaluation:**
+
+The model was assessed using a classification report and confusion matrix.
+
+**Confusion Matrix Analysis:**
+
+- Class 0 (Majority Class): 85,097 correct, 256 misclassified as Class 1, 3 as Class 2.
+
+- Class 1: 8,151 correct, 15 misclassified as Class 0.
+
+- Class 2: 11,010 correct, 5 misclassified as Class 0. 🔹Overall, the model performed well, but misclassifications suggest potential improvements through hyperparameter tuning and better feature engineering.
+
+5
+## FEATURE IMPORTANCE ANALYSIS
+
+Feature importance reveals which variables most impact the model’s predictions. The RandomForestClassifier ranks features based on their influence using feature_importances_.
+
+**Key Insights:**
+
+- Recency is the top predictor, showing recent purchases strongly influence customer behavior.
+
+- Monetary Value & Frequency are crucial, highlighting spending and shopping habits.
+
+- Month, Quarter & Country have moderate impact on predictions.
+
+- Hour & Days of the Week contribute the least, indicating minimal effect on classification.
+
+8
+
+**Why It Matters:**
+
+- Identifies key drivers behind model decisions.
+- Enables dimensionality reduction, improving efficiency.
+- Provides business insights for targeted marketing.
