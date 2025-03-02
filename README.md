@@ -18,42 +18,100 @@
 
 ## INTRODUCTION
 
-### 1. Objective
+### Objective
 
 The purpose of this project is to design a predictive model that categorizes online shopping transactions into certain categories and clusters. Utilizing machine learning and clustering techniques, the model will help businesses identify hidden patterns, reduce inventory management complexities, improve customer segmentation, and enhance sales forecasting.
 
-### 2. Business Problem
-Understanding customer buying behavior enables businesses to make data-driven decisions. The key objectives are:
-- Customer Segmentation: Grouping customers for targeted marketing strategies.
-- Inventory Optimization: Stocking high-demand products efficiently while avoiding overstocking of low-demand products.
-- Revenue Growth: Forecasting future sales trends to improve decision-making.
-- Marketing Strategies: Personalized recommendations and promotional campaigns based on purchasing behavior.
+## DATASET OVERVIEW
+The dataset used in this project is online retail transactions and contains the following primary columns:
 
-### 3. Methodology
-A structured data science approach was followed, including:
+- **InvoiceNo**: Unique transaction code.
+- **StockCode**: Unique product code.
+- **Description**: Name of product.
+- **Quantity**: Units purchased.
+- **InvoiceDate**: Date and time of transaction.
+- **UnitPrice**: Cost per unit of product.
+- **CustomerID**: Unique customer code (few missing values).
+- **Country**: Country in which transaction was made.
 
-#### 1. Data Collection & Preprocessing
+## DATA QUALITY ASSESSMENT
+## Identified Issues
 
-  - Gathered transactional data from the online retail store.
-  - Cleaned missing values, handled duplicates, and removed outliers.
+**Missing Values**:
 
-#### 2. Exploratory Data Analysis (EDA)
+- 1,454 missing values in the Description column.
+- 135,080 missing values in the CustomerID column.
 
-  - Analyzed purchase trends over time (yearly, quarterly, monthly).
-  - Identified top-selling products and customer purchase behavior.
-  - Used visualizations to uncover sales patterns.
+**Negative Values**:
 
-#### 3. Feature Engineering
+- 10,624 negative values in the Quantity column (indicating product returns).
+- 2 negative values in the UnitPrice column.
 
-  - Created new features (e.g., Total Sales, Purchase Period, Days of the Week).
-  - Applied encoding techniques for categorical variables.
-  - Normalized and standardized numerical data for better model performance.
+**Zero Values**:
 
-#### 4.Customer Segmentation (Using RFM & Clustering)
+- 2,515 zero values in the UnitPrice column.
 
-  - Performed Recency, Frequency, and Monetary (RFM) analysis.
-  - Applied K-Means clustering to group customers into meaningful segments.
-  - Visualized and interpreted customer clusters.
+**Special Characters and Blanks**:
+- Special characters and blank values in the Description column.
+
+**Duplicate Rows**:
+
+- 5,268 duplicate rows.
+
+**Unspecified Entries**:
+
+- Some rows in the Country column had "unspecified" entries.
+
+## Rectified Issues
+**Handling Missing Values**:
+
+- CustomerID: Missing values were handled using forward fill.
+- Description: Missing values were identified and handled.
+
+**Removing Negative and Zero Values**:
+
+- Classified negative Quantity values as product returns.
+- Removed negative UnitPrice values they identify possible debt and invalid entries.
+- Filtered out zero UnitPrice values.
+
+**Renaming "Unspecified" Country**:
+
+- "Unspecified" country entries were renamed to "Unknown" for clarity.
+
+**Removing Duplicates:**
+
+- Dropped 5,268 duplicate rows to ensure data accuracy.
+
+**Standardizing Product Descriptions:**
+
+- Renamed the Description column to Product for consistency.
+
+## TOOLS AND TECHNOLOGIES
+
+- **Excel** for initial data exploration and anomaly detection.
+- **Python** (pandas, numpy, matplotlib, seaborn, scikit-learn, XGBoost, Prophet).
+- **Jupyter Notebook** for visualization and analysis.
+- **Machine Learning Models**:Random Forest
+- **Clustering Techniques:** K-Means Clustering.
+- **Time Series Analysis:** Facebook Prophet to predict sales.
+
+## EXPLORATORY DATA ANALYSIS (EDA)
+
+## FEATURE ENGINEERING
+
+**Created new features:**
+
+- Total Sales
+- Year
+- Quarter
+- Month
+- Hour of the Day
+- Period of the Day
+- Days of the Week
+
+
+
+
 
 #### 5. Predictive Classification Model
 
