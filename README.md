@@ -334,3 +334,32 @@ Feature importance reveals which variables most impact the model’s predictions
 - Identifies key drivers behind model decisions.
 - Enables dimensionality reduction, improving efficiency.
 - Provides business insights for targeted marketing.
+
+## SALES FORECASTING (TIME SERIES ANALYSIS)
+
+**Daily Sales Trend:**
+
+- There are fluctuations, with noticeable spikes in sales on specific days.
+<img width="787" alt="Screenshot 2025-03-02 at 12 29 34 PM" src="https://github.com/user-attachments/assets/419205a3-07f9-4aa9-8529-1bd682c26d1b" />
+
+**Building the Forecasting Model:**
+
+- Facebook Prophet was used for time series forecasting, handling daily, weekly, and yearly seasonality.
+- The model was trained on past sales data to predict future trends.
+
+**Future Sales Prediction:**
+
+A 30-day forecast was generated.
+
+- Forecasted sales trend, with actual values overlaid.
+- The shaded region represents uncertainty, increasing over time.
+<img width="1170" alt="Screenshot 2025-03-02 at 12 32 43 PM" src="https://github.com/user-attachments/assets/ad73e347-6e71-4f8f-9adb-7a7feca73d07" />
+
+**Insights from Forecast Components:** The final plot breaks down the sales forecast into key components:
+
+- Trend: A steady upward trend suggests increasing sales over time.
+- Weekly Seasonality: Sales peak early in the week (Monday-Tuesday) and dip on Sundays.
+- Yearly Seasonality: High sales during holiday seasons (November-December) and periodic fluctuations.
+- Daily Seasonality: Sales rise in the morning and evening, with dips in between.
+<img width="1164" alt="Screenshot 2025-03-02 at 12 35 05 PM" src="https://github.com/user-attachments/assets/263e4765-98d3-4bb4-8235-9b95a1e52374" />
+<img width="1046" alt="Screenshot 2025-03-02 at 12 34 53 PM" src="https://github.com/user-attachments/assets/aa2cb157-b9de-4ef8-ac76-ca2512a3617b" />
