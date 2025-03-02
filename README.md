@@ -148,90 +148,129 @@ The dataset used in this project is online retail transactions and contains the 
 
 <img width="696" alt="Screenshot 2025-03-02 at 10 37 30 AM" src="https://github.com/user-attachments/assets/3bf747ae-ad78-45e5-ab10-609886a13119" />
 
+**Period Of The Day Purchase Trends**
 
-for strategic decision-making.
+- Afternoon has the highest sales, peaking around 6 million.
 
-## TOOLS AND TECHNOLOGIES
+- Morning follows closely, with sales above 4 million.
 
-- Python (pandas, numpy, matplotlib, seaborn, scikit-learn, XGBoost, Prophet)
-- Jupyter Notebook for data analysis and visualization
-- Machine Learning Models: Decision Trees, Random Forest, XGBoost, Logistic Regression
-- Clustering Techniques: K-Means Clustering
-- Time Series Analysis: Facebook Prophet for sales forecasting
+- Sales drop significantly in the evening, suggesting fewer transactions.
 
-## EXPLORATORY DATA ANALYSIS (EDA)
+- Night has the lowest sales, almost negligible, indicating little to no business activity.
 
-### Summary Statistics and Data Insights
+<img width="688" alt="Period Of the day" src="https://github.com/user-attachments/assets/cb2904ff-33b9-45fc-a3b7-082cfa31fdd9" />
 
-- Identified sales trends over time (yearly, quarterly, and monthly patterns).
-- Examined customer purchase behavior based on days of the week and times of the day.
-- Visualized top-selling products and purchase frequency.
-- Analyzed customer retention based on Recency, Frequency, and Monetary (RFM) metrics.
+**Monthly Purchase Trend**
 
-## FEATURE ENGINEERING
+- Slow Start: Sales are relatively low in January and February, with fluctuations in the first half of the year.
 
-- Created new features:
-  - Total Sales = Quantity Sold × Unit Price
-  - Purchase Period: Morning, Afternoon, Evening classification
-- Days of the Week Analysis
-- Outlier Detection and Handling: Used IQR method to remove anomalies.
-- Feature Scaling & Encoding: Standardization and categorical variable encoding.
+- Steady Growth: Sales pick up from May to August, though with slight variations.
 
-## PREDICTIVE CLASSIFICATION MODEL
+- Peak Season: Significant sales increase from September onward, peaking in November and December—likely due to holiday shopping.
 
-### Machine Learning Models Used:
-  - Logistic Regression
-  - Random Forest
-  - XGBoost
-  - 
-### Model Evaluation:
-  - Accuracy, Precision, Recall, F1-score
-  - Feature importance analysis
-  - Addressed class imbalance with resampling techniques
+- Possible Strategy: Capitalizing on peak months (November-December) with promotions and stock optimization could maximize revenue.
+
+<img width="711" alt="Screenshot 2025-03-02 at 10 43 26 AM" src="https://github.com/user-attachments/assets/9fe01003-7d1c-4f14-b2c8-6d8ba0c372c0" />
+
+**Quarter of the year trend**
+
+- Gradual Growth: Sales increase steadily from Q1 to Q3, indicating a consistent upward trend.
+
+- Major Surge in Q4: A sharp rise in Q4 sales, likely due to holiday shopping (Black Friday, Christmas).
+
+- Strategic Focus:
+
+  - Boost marketing and inventory for Q4 to maximize sales.
+  - Identify ways to improve performance in Q1 and Q2 (e.g., 
+    seasonal promotions).
+  
+<img width="701" alt="Screenshot 2025-03-02 at 10 44 32 AM" src="https://github.com/user-attachments/assets/0cda61ee-8a91-4773-99e5-30ba590b9880" />
 
 ## CLUSTERING ANALYSIS
+- Used unsupervised learning (K-Means) for Customer Segmentation and Product Segmentation.
 
-### Customer Segmentation (K-Means Clustering)
-  - Performed RFM Analysis:
-    - Recency: How recently a customer purchased
-    - Frequency: How often a customer buys
-    - Monetary Value: How much a customer spends
+## Customer Segmentation
+**Using The RFM Method To Check Customer Behaviour**
+
+  - Recency(R): Measures how recently a customer made a purchase.
+  - Frequency(F): Measures how often a customer makes a purchase.
+  - Monetary Value(M): Measures how much money a customer has spent.
     
-### Segmented Customers into Groups:
-  - High-Value Customers
-  - Regular Buyers
-  - One-Time Shoppers
-  - Visualized Customer Clusters to understand patterns and marketing opportunities.
+**Selecting And Standardizing The Clustering Features**
 
-## SALES FORECASTING
-Time Series Forecasting using Facebook Prophet
-Trained model on historical sales data to predict future revenue.
-Created future time periods and forecasted sales for the next months.
-Visualized forecast trends with confidence intervals.
-Evaluated Model Accuracy using RMSE and MAPE.
-CUSTOMER SEGMENTATION REPORT
-Identified key customer groups based on spending habits.
-Developed tailored marketing strategies for each segment.
-Recommended inventory adjustments to align with high-demand periods.
-BUSINESS INSIGHTS & MARKETING STRATEGY RECOMMENDATIONS
-Personalized marketing strategies based on customer segments.
-Dynamic pricing and discounting strategies to maximize revenue.
-Inventory restocking recommendations based on predictive insights.
-Customer loyalty programs to retain high-value customers.
-CONCLUSION
-Data-driven insights enable businesses to optimize their sales strategies.
-Predictive modeling improves transaction classification and inventory management.
-Clustering analysis helps in precise customer targeting for marketing efforts.
-Sales forecasting provides future revenue estimates for better planning.
-RECOMMENDATIONS
-Target High-Value Customers: Offer loyalty rewards and exclusive promotions.
-Stock Management Optimization: Reduce overstocking and maintain high-demand product availability.
-Improve Marketing Campaigns: Personalize recommendations based on customer clusters.
-Monitor Sales Trends: Use sales forecasting insights for proactive decision-making.
-Enhance Customer Retention: Identify at-risk customers and implement engagement strategies.
-About
-No description, website, or topics provided.
-Resources
- Readme
+  - Feature Selection:- We select "Recency," "Frequency," and "Monetary Value" as they best represent customer purchasing behavior.
+  - Standardization:Since the features are on different scales we use StandardScaler to normalize the data.This ensures fair distance calculations in             clustering algorithms
+
+**Finding The Optimal Number Of Clusters**
+
+  - Clustering requires selecting the right number of clusters (K) for the best customer segmentation.
+  - Elbow Method:** Determines the ideal number of clusters by analyzing inertia (WCSS).
+  - Optimal K:Identified at the "elbow point," where adding more clusters shows minimal improvement
+
+<img width="693" alt="Screenshot 2025-03-02 at 10 52 30 AM" src="https://github.com/user-attachments/assets/c3902a12-550b-4667-8cbc-8cd567e58497" />
+
+**Customer Segments and Strategies** After applying clustering, customers were grouped into three segments based on their purchasing behavior:
+
+**Segment 0 (Low-Value, Infrequent Shoppers):**
+
+- Low total sales, long time since last purchase, and low purchase frequency.
+- Likely one-time or rarely active customers.
+- Strategy: Re-engagement campaigns, discounts, and loyalty programs.
+
+**Segment 1 (Medium-Value, Frequent Shoppers)**
+
+- Moderate sales, recent purchases, and medium-to-high purchase frequency.
+- Active customers who shop regularly but don't spend excessively.
+- Strategy: Upselling, bundles, and membership perks to boost spending.
+
+**Segment 2 (High-Value, Frequent & Loyal Shoppers)**
+
+- Highest sales, very recent purchases, and extremely high frequency.
+- Loyal, high-spending customers.
+- Strategy: Exclusive VIP rewards, personalized offers, and premium services.
+
+<img width="839" alt="Screenshot 2025-03-02 at 10 55 32 AM" src="https://github.com/user-attachments/assets/63f730b6-1770-4d2d-8876-0acc7391f5fe" />
+
+## Product Segmentation
+**Using Key Metrics to Group Products**
+
+- Quantity: Measures the total number of units sold for each product.
+- Total Sales: Measures the total revenue generated by each product.
+- ASP (Average Selling Price): Measures the average price at which a product is sold.
+
+**Selecting And Standardizing The Clustering Features**
+
+- Feature Selection: We use Quantity, Total Sales, and ASP as they provide a comprehensive view of product performance.
+- Standardization: Since these features have different scales, we apply StandardScaler to normalize the data, ensuring fair clustering.
+
+**Finding The Optimal Number Of Clusters**
+
+- Clustering helps categorize products into different segments for better pricing and sales strategies.
+- Elbow Method: Determines the best number of clusters by analyzing inertia (WCSS).
+- Optimal K: Identified at the "elbow point," where adding more clusters provides minimal improvement.
+
+<img width="717" alt="Screenshot 2025-03-02 at 10 57 42 AM" src="https://github.com/user-attachments/assets/888fa1a8-6c1a-4b34-9395-e474f59b15ee" />
+
+**Product Segments and Strategies** After applying clustering, products were grouped into three segments based on their sales performance and pricing patterns:
+
+**Segment 0 (Low-Value Product)**
+
+- Low quantity sold, low total sales, and low ASP.
+- Struggling in sales or positioned as budget-friendly items.
+- Strategy: Improve visibility, offer discounts, and bundle with popular products.
+
+**Segment 1 (Moderate-Value Product)**
+
+- Moderate sales volume, balanced total sales, and mid-range ASP.
+- Core products that contribute to steady revenue.
+- Strategy: Maintain stock levels, use seasonal promotions, and highlight as "best-value" choices.
+
+**Segment 2 (Best-Selling Product)**
+
+- High quantity sold, high total revenue, and premium ASP.
+- High-demand and most profitable products.
+- Strategy: Offer exclusive deals, upselling opportunities, and ensure consistent stock availability.
+
+<img width="839" alt="Screenshot 2025-03-02 at 10 55 32 AM" src="https://github.com/user-attachments/assets/d4c5967c-2245-4f1b-8410-3a83d8df873b" />
 
 
