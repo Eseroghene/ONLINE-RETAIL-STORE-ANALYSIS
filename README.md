@@ -10,7 +10,7 @@
 - [Visualization](#Visualization)
 - [Clustering Analysis](#Clustering-Analysis)
 - [Predictive Classification Model](#Predictive-Classification-Model)
-- [Sales Forecasting](#Sales-Forecasting)
+- [Sales Forecasting (Time Series Analysis)](#Sales-Forecasting-(Time-Series-Analysis))
 - [Feature Importance Analysis](#Feature-Importance-Analysis)
 - [Business Insights & Marketing Strategy Recommendation](#Business-Insights-&-Marketing-Strategy-Recommendation)
 - [Conclusion](#Conclusion)
@@ -335,8 +335,7 @@ Feature importance reveals which variables most impact the model’s predictions
 - Enables dimensionality reduction, improving efficiency.
 - Provides business insights for targeted marketing.
 
-## SALES FORECASTING (TIME SERIES ANALYSIS)
-
+## SALES FORECASTING (Time Series Analysis)
 **Daily Sales Trend:**
 
 - There are fluctuations, with noticeable spikes in sales on specific days.
